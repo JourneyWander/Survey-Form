@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=7, initial-scale=1.0">
+    <title>Survey Form</title>
+    
+</head>
+<body>
+    <header>
+        <h1 id="title">Welcome to my Survey</h1>
+        <p id="description">This is a survey made for the Survey form project in fCC.</p>
+    </header>
+    <form id="survey-form">
+        <div>
+            <p>What's your name?</p>
+            <label for="name" id="name-label">Name:  
+                <input id="name" type="text"  required placeholder="John Doe"/>
+            </label>
+        </div>
+        <div>
+            <p>What's your email?</p>
+            <label for="email" id="email-label">Email:  
+                <input id="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="this@example.org"/>
+            </label>
+        </div>
+        <div>
+            <p>How old are you?</p>
+            <label for="number" id="number-label">Age:  
+                <input id="number" type="number" min="1" max="120" placeholder="1-120"/>
+            </label>
+        </div>
+        <div>
+            <p>What's your favorite animal?</p>
+            <select id="dropdown">
+                <option id="options" value="dogs">Dogs</option>
+                <option id="options" value="cats">Cats</option>
+                <option id="options" value="fish">Fish</option>
+                <option id="options" value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <p>How did you discover freeCodeCamp?</p>
+            <label for="youtube"><input id="youtube" type="radio" name="discover" value="youtube-radio"> Youtube</label>
+            <label for="forum"><input id="forum" type="radio" value="forum" name="discover"> Forum</label>
+            <label for="website"><input id="website" type="radio" value="website" name="discover"> Website</label>
+            <label for="other-radio"><input value="other-radio" type="radio" name="discover"> Radio</label>
+        </div>
+        <div>
+            <p>Select the vehicles you own: </p>
+            <label for="car"><input id="car" value="car" type="checkbox"/> Car</label>
+            <label for="bike"><input id="bike" value="bike" type="checkbox"/> Bicycle</label>
+            <label for="motorcycle"><input id="motorcycle" value="motorcycle" type="checkbox"/> Motorcycle</label>
+            <label for="other-checkbox"><input id="other-checkbox" value="other-checkbox" type="checkbox"/> Other</label>
+            <label for="none"><input id="none" value="none" type="checkbox"/> None</label>
+        </div>
+        <div>
+            <p>Tell me about yourself: </p>
+            <textarea rows="10" cols="40"></textarea>
+        </div>
+        <div>
+            <input type="submit" id="submit" />
+        </div>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
